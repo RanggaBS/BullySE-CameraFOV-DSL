@@ -14,7 +14,7 @@ end
 ---@field private _VERSION string
 ---@field private _INSTANCE CameraFOV?
 CAMERA_FOV_MOD = {
-	_VERSION = "1.0.0",
+	_VERSION = "1.0.1",
 
 	_INSTANCE = nil,
 }

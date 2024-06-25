@@ -30,11 +30,14 @@ function main()
 	---@param fov number
 	local function setFOV(fov)
 		if CameraGetFOV() ~= fov then
+			-- If not in super slingshot aim camera
 			if
-				camFov:IsCutsceneFOVOverriden()
-				-- If not in a cutscene & not in super slingshot aim camera (fix cannot
-				-- zoom further while in super slingshot aim camera)
-				or (GetCutsceneRunning() == 0 and CameraGetActive() ~= 2)
+				CameraGetActive() ~= 2
+				and (
+					camFov:IsCutsceneFOVOverriden()
+					-- If not in a cutscene
+					or GetCutsceneRunning() == 0
+				)
 			then
 				CameraSetFOV(fov)
 			end
