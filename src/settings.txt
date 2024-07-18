@@ -1,0 +1,16 @@
+[GENERAL]
+; Enable the mod
+bEnabled true
+
+; Override the cutscene camera FOV with this mod FOV.
+; If the cutscene is indoors, it'll use the interior FOV, and vice versa.
+bOverrideCutsceneFOV false
+
+; The camera FOV when you are in the main world (outdoors).
+fWorldFOV 90.0
+
+; The camera FOV when you are indoors.
+fInteriorFOV 90.0
+
+; Feel free to experiment changing the FOV value to different numbers. Can be
+; negative too.
