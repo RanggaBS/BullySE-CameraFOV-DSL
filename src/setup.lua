@@ -23,7 +23,7 @@ local privateFields = {
 		},
 
 		CONFIG = {
-			FILENAME_WITH_EXTENSION = "settings.ini",
+			FILENAME_WITH_EXTENSION = "settings.txt",
 			DEFAULT_SETTING = {
 				bEnabled = false,
 
